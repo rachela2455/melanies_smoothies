@@ -3,7 +3,7 @@ import streamlit as st
 from snowflake.snowpark.functions import col
 
 # temporary test
-st.write("Secrets keys:", list(st.secrets.keys()))
+st.write("Connection keys:", list(st.secrets["connections"].keys()))
 
 # Write directly to the app
 st.title(f"Customise Your Smoothie! :cup_with_straw:")
